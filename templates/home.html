@@ -1,0 +1,19 @@
+<nav class="nav has-shadow">
+  <div class="container">
+    <div class="nav-left">
+      <a class="nav-item is-tab" ng-click="query = {}">All</a>
+      <a class="nav-item is-tab" ng-click="query = {decade: 1960}">1960's</a>
+      <a class="nav-item is-tab" ng-click="query = {decade: 1970}">1970's</a>
+      <a class="nav-item is-tab" ng-click="query = {decade: 1980}">1980's</a>
+      <a class="nav-item is-tab" ng-click="query = {decade: 1990}">1990's</a>
+      </div>
+    <div class="nav-right">
+      <li class="nav-item">Search:</li>
+      <input class="nav-item is-tab" type="text" placeholder="Search" ng-model="name">
+    </div>
+  </div>
+</nav>
+<br>
+<div class="columns" style="flex-wrap:wrap">
+  <band-directive ng-repeat="band in bands | filter: query | filter: name" class="sample-show-hide"></band-directive>
+</div>

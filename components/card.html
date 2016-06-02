@@ -1,0 +1,24 @@
+<div class="column is-3">
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <a ng-href="#showBands/{{band.id}}">
+        <img ng-src={{band.image}} alt="{{band.name}}">
+      </a>
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+
+      <div class="media-content">
+        <a ng-href="#showBands/{{band.id}}"><p class="title is-5">{{band.name}}</p></a>
+        <p class="subtitle is-6">{{band.decade}}'s</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <p><strong>Featured song:</strong> {{band.songs[0]}}</p>
+    </div>
+  </div>
+</div>
+</div>

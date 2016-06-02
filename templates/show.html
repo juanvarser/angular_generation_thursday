@@ -1,0 +1,14 @@
+<div class="columns">
+  <div class="column is-6">
+    <img ng-src={{band.image}} alt="{{band.name}}">
+  </div>
+  <div class="column is-6">
+    <div class="content">
+      <h1 class="title is-3">{{band.name}}</h1>
+      <p><strong>Decade:</strong> {{band.decade}}'s</p>
+      <ul ng-repeat="song in band.songs | orderBy: expression">
+        <li>{{song}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

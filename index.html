@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bandsModule">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Directives are cool!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.28/css/bulma.min.css">
+  <link rel="stylesheet" href="assets/stylesheets/global.css">
+</head>
+<body>
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          <a href="#home">Let's Rock!</a>
+        </h1>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="container">
+    <ng-view></ng-view>
+  </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</html>
